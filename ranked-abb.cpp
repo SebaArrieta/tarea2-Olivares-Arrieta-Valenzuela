@@ -307,14 +307,16 @@ int RankedABB::rank(tElem x){ //se crea una sobrecarga del metodo, para que al a
 * Funcion tipo:int 
   Nombre Funcion:rank
 ******
-* metodo que 
+* metodo que se encarga de realizar las comparaciones necesarias mientras realiza un recorrido por el arbol y asi determinar todos los nodos cuyos valores sean menores a los valores
+pasados por el paramentro, para esto hace uso de la variable contadorMenor y de una busqueda de algun nodo cuyo valor se aproxime o sea igual al seleccionado.
 ******
 * Input:
-* tipoParámetro NombreParámetro : Descripción Parámetro
+* tElem x: entero seleccionado para iniciar la busqueda de los valores menores o iguales al mismo en el arbol.
+tNodo *nodo: nodo cuyo valor servira como referencia para encontrar un valor que se aproxime o iguale a x.
 * .......
 ******
 * Returns:
-* TipoRetorno, Descripción retorno
+* int retorna la cantodad de nodos cuyos valores sean menores o iguales a x.
 *****/
 int RankedABB::rank(tElem x,tNodo *nodo){
     if(nodo != NULL){   
